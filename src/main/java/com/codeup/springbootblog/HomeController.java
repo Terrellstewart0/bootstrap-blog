@@ -11,10 +11,10 @@ public class HomeController {
 
 
 
-        @GetMapping("/hello")
+        @GetMapping("/landing")
         @ResponseBody
-        public String hello() {
-            return "Hello from Spring!";
+        public String landing() {
+            return "This is the landing page!!!";
         }
 
 
