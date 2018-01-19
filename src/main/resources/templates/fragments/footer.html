@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head></head>
 <body>
-
-    <footer th:fragment="my-partial" id="1" class="red-color" style="background-color: deepskyblue">
-        You kids like some content
-    </footer>
-
-<footer th:fragment="my-partial2" id="2" class="red-color">
-        partial content goes here...
+    <footer th:fragment="footer" class="footer">
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Codeup blog &copy; <span th:text="${#dates.year(#dates.createNow())}"></span></span>
+            </div>
+        </footer>
 </footer>
-
-</body>
-</html>
